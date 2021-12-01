@@ -1,0 +1,27 @@
+nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    float: left;
+}
+nav a {
+    font-family: Raleway, sans-serif;
+    float: left;
+    flex-direction: row;
+    text-align: center;
+    padding: 0.5em 1.1em;
+    margin-top: 0.45em;
+    margin-bottom: 0.45em;
+    margin-right: 0.1em;
+    text-decoration: none;
+    font-size: 17px;
+    color: #1a1a1a;
+}
+
+nav a:hover {
+    background: rgb(220, 220, 220);
+}

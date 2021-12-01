@@ -21,10 +21,7 @@ nav a {
     float: left;
     flex-direction: row;
     text-align: center;
-    padding-right: 1.1em;
-    padding-left: 1.1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding: 0.5em 1.1em;
     margin-top: 0.45em;
     margin-bottom: 0.45em;
     margin-right: 0.1em;
@@ -42,7 +39,8 @@ nav a:hover {
 }
 
 .img{
-    justify-content: center;
+    height: max-content;
+    position: center;;
     display: flex;
     width: 400px;
     height: 300px;
@@ -57,14 +55,13 @@ nav a:hover {
     flex-direction: column;
     display: flex;
     flex: 1;
-    max-width: 30%;
-    justify-content: flex-start;
-    padding: 25px 26px;
+    max-width: 100%;
+    justify-content: flex-end;
+    padding: 26px;
     border-radius: 9px;
-    margin: 15px;
-    width: 100%;
+    margin: 30px;
+    width: 300px;
     float: left;
-    transition: width .2s;
 }
 .row1{
     display: flex;
@@ -154,6 +151,7 @@ nav a:hover {
     padding-bottom: 0;
 }
 .sect3{
+    overflow: hidden;
     background-size: cover;
     height: 100vh;
     background: url("images/back3.jpg");
@@ -180,27 +178,22 @@ nav a:hover {
     transition: width .2s;
 }
 
-@media only screen and (min-width: 450px) {
+@media (min-width: 450px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
     .card {
         width: 50%;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 1000px) {
     .card {
         width: 33.333%;
     }
-}
-
-@media only screen and (min-width: 1000px) {
-    .card {
-        width: 25%;
-    }
-}
-@media (min-width: 768px) {
-  .img-lg {
-    font-size: 3.5rem;
-  }
 }
 
 .btn{
